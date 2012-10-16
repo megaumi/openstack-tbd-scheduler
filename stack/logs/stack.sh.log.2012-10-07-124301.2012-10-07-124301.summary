@@ -1,0 +1,20 @@
+stack.sh log /opt/stack/logs/stack.sh.log.2012-10-07-124301
+Installing package prerequisites
+Installing Python prerequisites
+Installing OpenStack project source
+Configuring OpenStack projects
+Starting RabbitMQ
+Configuring and starting MySQL
+Starting Keystone
+Configuring and starting Horizon
+Configuring Glance
+Configuring Nova
+Configuring Cinder
+Configuring Nova
+Using libvirt virtualization driver
+Starting Glance
+Starting Nova API
+Starting Nova
+Starting Cinder
+Uploading images
+stack.sh completed in 1346 seconds.
