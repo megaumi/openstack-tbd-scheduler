@@ -1,0 +1,10 @@
+http://docs.openstack.org/developer/nova/devref/filter_scheduler.html
+http://docs.openstack.org/developer/nova/devref/
+http://wiki.openstack.org/ProximityScheduler
+http://wiki.openstack.org/EssexSchedulerSession
+http://wiki.openstack.org/EssexSchedulerImprovements
+http://wiki.openstack.org/PC_scheduler
+http://wiki.openstack.org/Policy_Scheduler
+http://wiki.openstack.org/HeterogeneousArchitectureScheduler
+http://wiki.openstack.org/DistributedScheduler
+http://wiki.openstack.org/SchedulerImplementation
