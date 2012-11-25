@@ -6,7 +6,7 @@
 # vlad.belogrudov@gmail.com
 # 
 
- 
+ set -x
 # list of openstack guests
 vmlist=`nova-manage vm list 2>/dev/null | grep active | tr -s \  | cut -d \  -f 1`
  
