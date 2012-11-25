@@ -62,8 +62,9 @@ do
         pcpu=`echo $pcpu | tr \ '.' ' ' | cut -d \  -f 1`
         pcpu=$(( $pcpu / $proc_num ))
         [[ "x" != "x$instance" ]] && [[ "x" != "x$name" ]] && [[ "x" != "x$pcpu" ]] || continue
-        echo $host $name $pcpu
-        mysql -u$NOVA_USERNAME -p$NOVA_PASSWORD vmstats -e "INSERT INTO vmpcpustats (vm, host, pcpu) VALUES ('$name', '$host', '$pcpu');"
+        lavg=`uptime | sed 's/.*load average: \([0-9]\.[0-9][0-9]\).*/\1/'`
+        echo $host $name $pcpu $lavg
+        mysql -u$NOVA_USERNAME -p$NOVA_PASSWORD vmstats -e "INSERT INTO vmpcpustats (vm, host, pcpu, lavg) VALUES ('$name', '$host', '$pcpu', '$lavg');"
  
     done
 done
